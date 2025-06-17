@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伊以冲突投资分析</title>
+
+    <!-- 1. Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 2. Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- 3. Framer Motion via CDN -->
+    <script type="module">
+        import { animate, stagger } from "https://cdn.framer.com/motion/framer-motion.es.js";
+
+        // 为内容块应用入场动画
+        animate(
+            ".motion-reveal",
+            { opacity: [0, 1], y: [20, 0] },
+            { delay: stagger(0.1), duration: 0.6, ease: "easeOut" }
+        );
+    </script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: #1e293b; /* bg-slate-800 */
+            color: #cbd5e1; /* text-slate-300 */
+        }
+        .section-title {
+            @apply text-2xl font-bold text-slate-100 mb-6 border-b-2 border-slate-600 pb-3;
+        }
+        .card {
+            @apply bg-slate-900/70 p-6 rounded-xl shadow-lg border border-slate-700 backdrop-blur-sm;
+        }
+        .highlight-gold {
+            @apply text-amber-400 font-bold;
+        }
+        .highlight-red {
+            @apply text-red-500 font-bold;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-4 py-12">
+
+        <header class="text-center mb-12 motion-reveal">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-red-500">
+                伊以冲突投资分析
+            </h1>
+            <p class="mt-4 text-lg text-slate-400">地缘政治风险下的市场脉搏与策略应对</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Military Actions -->
+            <div class="card motion-reveal lg:col-span-1">
+                <h2 class="section-title"><i class="fas fa-fighter-jet mr-3 text-red-500"></i>军事行动</h2>
+                <ul class="space-y-3">
+                    <li><strong class="text-slate-200">以色列：</strong>对伊朗核与导弹设施发动大规模空袭。</li>
+                    <li><strong class="text-slate-200">伊朗：</strong>发射逾120枚导弹反击，并威胁封锁霍尔木兹海峡。</li>
+                    <li><strong class="text-slate-200">最新表态：</strong>以色列暗示将继续打击伊朗本土。</li>
+                </ul>
+            </div>
+
+            <!-- Market Reaction -->
+            <div class="card motion-reveal lg:col-span-1">
+                <h2 class="section-title"><i class="fas fa-chart-line mr-3 text-amber-400"></i>市场即时反应</h2>
+                <ul class="space-y-3">
+                    <li><strong class="text-slate-200">油价：</strong>布伦特原油一度升至 <span class="highlight-red">74.60</span> 美元/桶。</li>
+                    <li><strong class="text-slate-200">黄金：</strong>避险买盘推升金价刷新纪录，大行上调目标价至 <span class="highlight-gold">4000</span> 美元。</li>
+                    <li><strong class="text-slate-200">波动率：</strong>VIX指数跳升后仍处于 <span class="highlight-red">20</span> 上方。</li>
+                </ul>
+            </div>
+            
+            <!-- Structural Factors -->
+            <div class="card motion-reveal lg:col-span-1">
+                <h2 class="section-title"><i class="fas fa-balance-scale mr-3 text-blue-400"></i>结构性因素</h2>
+                <ul class="space-y-3">
+                    <li><strong class="text-slate-200">核问题：</strong>伊朗浓缩纯度逼近武器级触碰以色列“红线”。</li>
+                    <li><strong class="text-slate-200">代理人战争：</strong>哈马斯、真主党等袭击加剧，以色列决定“直接斩首”。</li>
+                    <li><strong class="text-slate-200">国内政治：</strong>双方强硬派均有对外展示强硬的需求。</li>
+                </ul>
+            </div>
+
+            <!-- Investment Impact Table -->
+            <div class="card motion-reveal lg:col-span-3">
+                <h2 class="section-title"><i class="fas fa-wallet mr-3 text-amber-400"></i>对投资的已见影响</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-slate-800 text-slate-300">
+                            <tr>
+                                <th class="p-3">资产类别</th>
+                                <th class="p-3">近期表现</th>
+                                <th class="p-3">关键驱动</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-700"><td class="p-3">原油</td><td class="p-3 highlight-red">+7%后高位震荡</td><td class="p-3">霍尔木兹封锁风险</td></tr>
+                            <tr class="border-b border-slate-700"><td class="p-3">黄金</td><td class="p-3 highlight-gold">刷新历史高点 3450 $/oz</td><td class="p-3">央行买盘+地缘避险</td></tr>
+                            <tr class="border-b border-slate-700"><td class="p-3">全球股票</td><td class="p-3">高β板块回调，能源/军工逆势走强</td><td class="p-3">油价弹性、军费预期</td></tr>
+                            <tr class="border-b border-slate-700"><td class="p-3">外汇</td><td class="p-3">美元指数小幅走弱</td><td class="p-3">黄金吸走部分避险流</td></tr>
+                            <tr class="border-b border-slate-700"><td class="p-3">信用债</td><td class="p-3">海湾新兴市场利差扩大 15 bp</td><td class="p-3">资金撤离高油进口国</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Scenario Forecast -->
+            <div class="card motion-reveal lg:col-span-3">
+                <h2 class="section-title"><i class="fas fa-binoculars mr-3 text-blue-400"></i>后续走势情景预测 (6–12 个月)</h2>
+                 <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-slate-800 text-slate-300">
+                            <tr>
+                                <th class="p-3">情景</th>
+                                <th class="p-3">概率</th>
+                                <th class="p-3">市场假设</th>
+                                <th class="p-3">关键监测指标</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-700"><td class="p-3">有限报复后降温</td><td class="p-3 font-bold text-green-400">55 %</td><td class="p-3">油价回落至 65–80；股指修复</td><td class="p-3">美/伊外交斡旋、霍尔木兹航运量</td></tr>
+                            <tr class="border-b border-slate-700"><td class="p-3">长期消耗战</td><td class="p-3 font-bold text-amber-400">30 %</td><td class="p-3">油价维持 80–100；防务/能源股跑赢</td><td class="p-3">伊朗导弹袭港口频次、海湾增产能力</td></tr>
+                            <tr class="border-b border-slate-700"><td class="p-3">极端升级 (海峡封锁)</td><td class="p-3 font-bold text-red-500">15 %</td><td class="p-3">油价破 120；股指回调 >15%</td><td class="p-3">美第5舰队动向、油轮保险费率</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Investment Strategy -->
+            <div class="card motion-reveal lg:col-span-3">
+                <h2 class="section-title"><i class="fas-solid fa-bullseye-arrow mr-3 text-amber-400"></i>策略建议</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-4 bg-slate-800 rounded-lg">
+                        <h3 class="font-bold text-lg text-amber-300"><i class="fas fa-gem mr-2"></i>核心配置黄金</h3>
+                        <p class="mt-2">建议持有组合 <span class="font-bold">5–10%</span>，对冲黑天鹅，目标区间 <span class="font-bold">3600–3800</span> $/oz。</p>
+                    </div>
+                    <div class="p-4 bg-slate-800 rounded-lg">
+                        <h3 class="font-bold text-lg text-slate-200"><i class="fas fa-shield-halved mr-2"></i>军工与网络安全</h3>
+                        <p class="mt-2">美、以军工及油服企业在冲突拉长时将持续受益。</p>
+                    </div>
+                    <div class="p-4 bg-slate-800 rounded-lg">
+                        <h3 class="font-bold text-lg text-red-400"><i class="fas fa-ban mr-2"></i>回避高油价依赖</h3>
+                        <p class="mt-2">规避航空、航运及能源密集型化工，审慎对待印度、韩国等市场。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
