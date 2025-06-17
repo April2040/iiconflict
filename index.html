@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>伊以冲突投资分析</title>
+    <title>伊以冲突投资分析（最终版）</title>
 
     <!-- 1. Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,14 +26,14 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-            background-color: #1e293b; /* bg-slate-800 */
-            color: #cbd5e1; /* text-slate-300 */
+            background-color: #111827; /* bg-gray-900 */
+            color: #d1d5db; /* text-gray-300 */
         }
         .section-title {
-            @apply text-2xl font-bold text-slate-100 mb-6 border-b-2 border-slate-600 pb-3;
+            @apply text-2xl font-bold text-gray-100 mb-6 border-b-2 border-gray-700 pb-3;
         }
         .card {
-            @apply bg-slate-900/70 p-6 rounded-xl shadow-lg border border-slate-700 backdrop-blur-sm;
+            @apply bg-gray-800/80 p-6 rounded-xl shadow-lg border border-gray-700 backdrop-blur-sm;
         }
         .highlight-gold {
             @apply text-amber-400 font-bold;
@@ -51,105 +51,78 @@
             <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-red-500">
                 伊以冲突投资分析
             </h1>
-            <p class="mt-4 text-lg text-slate-400">地缘政治风险下的市场脉搏与策略应对</p>
+            <p class="mt-4 text-lg text-gray-400">地缘政治风险下的市场脉搏与策略应对</p>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Military Actions -->
-            <div class="card motion-reveal lg:col-span-1">
-                <h2 class="section-title"><i class="fas fa-fighter-jet mr-3 text-red-500"></i>军事行动</h2>
-                <ul class="space-y-3">
-                    <li><strong class="text-slate-200">以色列：</strong>对伊朗核与导弹设施发动大规模空袭。</li>
-                    <li><strong class="text-slate-200">伊朗：</strong>发射逾120枚导弹反击，并威胁封锁霍尔木兹海峡。</li>
-                    <li><strong class="text-slate-200">最新表态：</strong>以色列暗示将继续打击伊朗本土。</li>
-                </ul>
-            </div>
+        <div class="space-y-8">
 
-            <!-- Market Reaction -->
-            <div class="card motion-reveal lg:col-span-1">
-                <h2 class="section-title"><i class="fas fa-chart-line mr-3 text-amber-400"></i>市场即时反应</h2>
-                <ul class="space-y-3">
-                    <li><strong class="text-slate-200">油价：</strong>布伦特原油一度升至 <span class="highlight-red">74.60</span> 美元/桶。</li>
-                    <li><strong class="text-slate-200">黄金：</strong>避险买盘推升金价刷新纪录，大行上调目标价至 <span class="highlight-gold">4000</span> 美元。</li>
-                    <li><strong class="text-slate-200">波动率：</strong>VIX指数跳升后仍处于 <span class="highlight-red">20</span> 上方。</li>
-                </ul>
-            </div>
-            
-            <!-- Structural Factors -->
-            <div class="card motion-reveal lg:col-span-1">
-                <h2 class="section-title"><i class="fas fa-balance-scale mr-3 text-blue-400"></i>结构性因素</h2>
-                <ul class="space-y-3">
-                    <li><strong class="text-slate-200">核问题：</strong>伊朗浓缩纯度逼近武器级触碰以色列“红线”。</li>
-                    <li><strong class="text-slate-200">代理人战争：</strong>哈马斯、真主党等袭击加剧，以色列决定“直接斩首”。</li>
-                    <li><strong class="text-slate-200">国内政治：</strong>双方强硬派均有对外展示强硬的需求。</li>
-                </ul>
-            </div>
-
-            <!-- Investment Impact Table -->
-            <div class="card motion-reveal lg:col-span-3">
-                <h2 class="section-title"><i class="fas fa-wallet mr-3 text-amber-400"></i>对投资的已见影响</h2>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-slate-800 text-slate-300">
-                            <tr>
-                                <th class="p-3">资产类别</th>
-                                <th class="p-3">近期表现</th>
-                                <th class="p-3">关键驱动</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-slate-700"><td class="p-3">原油</td><td class="p-3 highlight-red">+7%后高位震荡</td><td class="p-3">霍尔木兹封锁风险</td></tr>
-                            <tr class="border-b border-slate-700"><td class="p-3">黄金</td><td class="p-3 highlight-gold">刷新历史高点 3450 $/oz</td><td class="p-3">央行买盘+地缘避险</td></tr>
-                            <tr class="border-b border-slate-700"><td class="p-3">全球股票</td><td class="p-3">高β板块回调，能源/军工逆势走强</td><td class="p-3">油价弹性、军费预期</td></tr>
-                            <tr class="border-b border-slate-700"><td class="p-3">外汇</td><td class="p-3">美元指数小幅走弱</td><td class="p-3">黄金吸走部分避险流</td></tr>
-                            <tr class="border-b border-slate-700"><td class="p-3">信用债</td><td class="p-3">海湾新兴市场利差扩大 15 bp</td><td class="p-3">资金撤离高油进口国</td></tr>
-                        </tbody>
-                    </table>
+            <!-- Top Row: Actions & Reactions -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card motion-reveal">
+                    <h2 class="section-title"><i class="fas fa-fighter-jet mr-3 text-red-500"></i>军事行动</h2>
+                    <ul class="space-y-3">
+                        <li><strong class="text-gray-200">以色列：</strong>对伊朗核与导弹设施发动大规模空袭，意图“削弱其核能力”。</li>
+                        <li><strong class="text-gray-200">伊朗：</strong>发射逾120枚导弹反击，并威胁封锁霍尔木兹海峡。</li>
+                        <li><strong class="text-gray-200">最新表态：</strong>以色列暗示将继续打击伊朗本土，局势高度紧张。</li>
+                    </ul>
+                </div>
+                <div class="card motion-reveal">
+                    <h2 class="section-title"><i class="fas fa-chart-line mr-3 text-amber-400"></i>市场即时反应</h2>
+                    <ul class="space-y-3">
+                        <li><strong class="text-gray-200">油价：</strong>布伦特原油一度升至 <span class="highlight-red">74.60</span> 美元/桶。</li>
+                        <li><strong class="text-gray-200">黄金：</strong>避险买盘推升金价刷新纪录，大行上调目标价至 <span class="highlight-gold">4000</span> 美元。</li>
+                        <li><strong class="text-gray-200">波动率：</strong>VIX指数跳升后仍处于 <span class="highlight-red">20</span> 上方，市场避险情绪浓厚。</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Scenario Forecast -->
-            <div class="card motion-reveal lg:col-span-3">
-                <h2 class="section-title"><i class="fas fa-binoculars mr-3 text-blue-400"></i>后续走势情景预测 (6–12 个月)</h2>
-                 <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-slate-800 text-slate-300">
-                            <tr>
-                                <th class="p-3">情景</th>
-                                <th class="p-3">概率</th>
-                                <th class="p-3">市场假设</th>
-                                <th class="p-3">关键监测指标</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-slate-700"><td class="p-3">有限报复后降温</td><td class="p-3 font-bold text-green-400">55 %</td><td class="p-3">油价回落至 65–80；股指修复</td><td class="p-3">美/伊外交斡旋、霍尔木兹航运量</td></tr>
-                            <tr class="border-b border-slate-700"><td class="p-3">长期消耗战</td><td class="p-3 font-bold text-amber-400">30 %</td><td class="p-3">油价维持 80–100；防务/能源股跑赢</td><td class="p-3">伊朗导弹袭港口频次、海湾增产能力</td></tr>
-                            <tr class="border-b border-slate-700"><td class="p-3">极端升级 (海峡封锁)</td><td class="p-3 font-bold text-red-500">15 %</td><td class="p-3">油价破 120；股指回调 >15%</td><td class="p-3">美第5舰队动向、油轮保险费率</td></tr>
-                        </tbody>
-                    </table>
+            <!-- Detailed Structural Factors -->
+            <div class="card motion-reveal">
+                <h2 class="section-title"><i class="fas fa-balance-scale mr-3 text-blue-400"></i>冲突缘起与结构性因素</h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed">
+                    <p><strong class="text-gray-100">核问题：</strong>伊朗铀浓缩纯度已达60%，距90%的武器级仅“最后一步”，这触碰了以色列的“红线”；一旦突破90%，伊朗理论上数周内便可制造出核弹，这对以色列构成无法接受的生存威胁，是其采取先发制人打击的核心动因。</p>
+                    <p><strong class="text-gray-100">区域代理战争外溢：</strong>伊朗长期支持哈马斯、真主党等武装，将其作为在中东的“延伸手臂”；近期随着各条战线冲突加剧，以色列选择直接打击伊朗本土，意在威慑德黑兰，标志着双方从“影子战争”迈向公开对抗。</p>
+                    <p><strong class="text-gray-100">国内政治考量：</strong>在以色列，内塔尼亚胡联合政府需对外强硬以巩固内部地位，超70%的民众支持对伊动武；同样，伊朗强硬派也借此煽动民族主义情绪，以在经济困境中稳固统治。</p>
+                </div>
+            </div>
+            
+            <!-- Impact & Scenario Tables -->
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <div class="card motion-reveal">
+                    <h2 class="section-title"><i class="fas fa-wallet mr-3 text-amber-400"></i>对投资的已见影响</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left"><thead class="bg-gray-700 text-gray-300"><tr><th class="p-3">资产类别</th><th class="p-3">近期表现</th><th class="p-3">关键驱动</th></tr></thead><tbody><tr class="border-b border-gray-700"><td class="p-3">原油</td><td class="p-3 highlight-red">+7%后高位震荡</td><td class="p-3">霍尔木兹封锁风险</td></tr><tr class="border-b border-gray-700"><td class="p-3">黄金</td><td class="p-3 highlight-gold">刷新历史高点 3450 $/oz</td><td class="p-3">央行买盘+地缘避险</td></tr><tr class="border-b border-gray-700"><td class="p-3">全球股票</td><td class="p-3">能源/军工逆势走强</td><td class="p-3">油价弹性、军费预期</td></tr><tr class="border-b border-gray-700"><td class="p-3">外汇</td><td class="p-3">美元指数小幅走弱</td><td class="p-3">黄金吸走部分避险流</td></tr><tr><td class="p-3">信用债</td><td class="p-3">海湾新兴市场利差扩大</td><td class="p-3">资金撤离高油进口国</td></tr></tbody></table>
+                    </div>
+                </div>
+                <div class="card motion-reveal">
+                    <h2 class="section-title"><i class="fas fa-binoculars mr-3 text-blue-400"></i>后续走势情景预测</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left"><thead class="bg-gray-700 text-gray-300"><tr><th class="p-3">情景</th><th class="p-3">概率</th><th class="p-3">市场假设</th></tr></thead><tbody><tr class="border-b border-gray-700"><td class="p-3">有限报复后降温</td><td class="p-3 font-bold text-green-400">55%</td><td class="p-3">油价回落至65–80</td></tr><tr class="border-b border-gray-700"><td class="p-3">长期消耗战</td><td class="p-3 font-bold text-amber-400">30%</td><td class="p-3">油价维持80–100</td></tr><tr><td class="p-3">极端升级</td><td class="p-3 font-bold text-red-500">15%</td><td class="p-3">油价破120, 股指回调>15%</td></tr></tbody></table>
+                    </div>
                 </div>
             </div>
 
             <!-- Investment Strategy -->
-            <div class="card motion-reveal lg:col-span-3">
-                <h2 class="section-title"><i class="fas-solid fa-bullseye-arrow mr-3 text-amber-400"></i>策略建议</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="p-4 bg-slate-800 rounded-lg">
-                        <h3 class="font-bold text-lg text-amber-300"><i class="fas fa-gem mr-2"></i>核心配置黄金</h3>
-                        <p class="mt-2">建议持有组合 <span class="font-bold">5–10%</span>，对冲黑天鹅，目标区间 <span class="font-bold">3600–3800</span> $/oz。</p>
-                    </div>
-                    <div class="p-4 bg-slate-800 rounded-lg">
-                        <h3 class="font-bold text-lg text-slate-200"><i class="fas fa-shield-halved mr-2"></i>军工与网络安全</h3>
-                        <p class="mt-2">美、以军工及油服企业在冲突拉长时将持续受益。</p>
-                    </div>
-                    <div class="p-4 bg-slate-800 rounded-lg">
-                        <h3 class="font-bold text-lg text-red-400"><i class="fas fa-ban mr-2"></i>回避高油价依赖</h3>
-                        <p class="mt-2">规避航空、航运及能源密集型化工，审慎对待印度、韩国等市场。</p>
-                    </div>
+            <div class="card motion-reveal">
+                <h2 class="section-title"><i class="fas fa-bullseye-arrow mr-3 text-amber-400"></i>应对策略建议</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-4 bg-gray-700/50 rounded-lg"><h3 class="font-bold text-lg text-amber-300"><i class="fas fa-gem mr-2"></i>1. 核心配置黄金</h3><p class="mt-2 text-sm">持有组合 <span class="font-bold">5–10%</span>，对冲黑天鹅，目标 <span class="font-bold">3600–3800</span> $/oz。</p></div>
+                    <div class="p-4 bg-gray-700/50 rounded-lg"><h3 class="font-bold text-lg text-gray-200"><i class="fas fa-shield-halved mr-2"></i>2. 军工与安全股</h3><p class="mt-2 text-sm">美、以军工及油服企业或将持续受益。</p></div>
+                    <div class="p-4 bg-gray-700/50 rounded-lg"><h3 class="font-bold text-lg text-red-400"><i class="fas fa-ban mr-2"></i>3. 回避高油价依赖</h3><p class="mt-2 text-sm">谨慎对待航空、航运、能源密集型化工及印度、韩国等市场。</p></div>
+                    <div class="p-4 bg-gray-700/50 rounded-lg"><h3 class="font-bold text-lg text-cyan-400"><i class="fas fa-chart-pie mr-2"></i>4. 波动率对冲</h3><p class="mt-2 text-sm">当恐慌情绪升温时，考虑看涨期权对冲极端风险。</p></div>
                 </div>
             </div>
 
+            <!-- Overview -->
+            <footer class="motion-reveal mt-8">
+                <div class="bg-gradient-to-r from-slate-900 via-gray-800 to-slate-900 text-white p-8 rounded-xl shadow-2xl text-center border border-gray-600">
+                    <i class="fas fa-flag-checkered text-4xl text-amber-300 mb-4"></i>
+                    <h2 class="text-3xl font-bold mb-4">总览</h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        短期市场以“风险可控”定价，但冲突已跨越以往的“代理人战争”红线。投资者应在基准配置上保持<strong class="text-amber-300">防御性倾向</strong>，利用衍生品捕捉<strong class="text-amber-300">波动溢价</strong>，并密切跟踪外交与产油通道的实时动向。
+                    </p>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
